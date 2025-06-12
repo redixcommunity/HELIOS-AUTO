@@ -6,8 +6,7 @@ module.exports = {
   networks: {
     heliosTestnet: {
       url: process.env.RPC_URL,
-      accounts: [process.env.PRIVATE_KEY],
-      chainId: 42000,
+      accounts: [process.env.PRIVATE_KEY]
     },
   },
 };
