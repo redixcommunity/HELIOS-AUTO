@@ -1,7 +1,6 @@
 # helios-daily-gm 🌓
 
 Skrip Node.js untuk **deploy smart contract berisi pesan "GM" harian** ke jaringan Helios EVM.  
-Semua kontrak disimpan log dan kamu bisa baca kembali pesan GM yang sudah dideploy sebelumnya.
 
 ---
 
