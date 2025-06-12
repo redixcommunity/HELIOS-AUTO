@@ -1,0 +1,21 @@
+{
+  "name": "helios-daily-gm",
+  "version": "1.0.0",
+  "description": "Deploy smart contract GM setiap hari ke Helios EVM",
+  "main": "scripts/dailyDeploy.js",
+  "scripts": {
+    "deploy:gm": "npx hardhat run --network heliosTestnet scripts/dailyDeploy.js",
+    "read:gm": "npx hardhat run --network heliosTestnet scripts/readLastGm.js"
+  },
+  "keywords": ["helios", "evm", "smart-contract", "gm", "hardhat"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.22.1"
+  }
+}
