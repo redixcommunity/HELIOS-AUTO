@@ -1,10 +1,13 @@
 const hre = require("hardhat");
 const fs = require("fs");
 const path = require("path");
+const solasidoLogo = require("./logo.js");
 
 async function deployGmContract() {
+  console.log(solasidoLogo);
+  
   const now = new Date();
-  const gmMessage = `gSAD 🌞 ${now.toDateString()} - ${now.toLocaleTimeString()}`;
+  const gmMessage = `GM 🌞 ${now.toDateString()} - ${now.toLocaleTimeString()}`;
 
   const [deployer] = await hre.ethers.getSigners();
   console.log(`Deploying gSAD 🌞 from ${deployer.address}`);

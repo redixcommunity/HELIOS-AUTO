@@ -5,14 +5,23 @@
   "main": "scripts/dailyDeploy.js",
   "scripts": {
     "deploy:gm": "npx hardhat run --network heliosTestnet scripts/dailyDeploy.js",
-    "read:gm": "npx hardhat run --network heliosTestnet scripts/readLastGm.js"
+    "read:gm": "npx hardhat run --network heliosTestnet scripts/readLastGm.js",
+    "deploy:token": "npx hardhat run --network heliosTestnet scripts/deployToken.js"
   },
-  "keywords": ["helios", "evm", "smart-contract", "gm", "hardhat"],
+  "keywords": [
+    "helios",
+    "evm",
+    "smart-contract",
+    "gm",
+    "hardhat"
+  ],
   "author": "Solasido",
   "license": "MIT",
   "dependencies": {
+    "@openzeppelin/contracts": "^5.3.0",
     "dotenv": "^16.3.1",
-    "ethers": "^6.8.1"
+    "ethers": "^6.8.1",
+    "inquirer": "^12.6.3"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
