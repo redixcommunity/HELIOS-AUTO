@@ -8,7 +8,7 @@
     "read:gm": "npx hardhat run --network heliosTestnet scripts/readLastGm.js"
   },
   "keywords": ["helios", "evm", "smart-contract", "gm", "hardhat"],
-  "author": "Your Name",
+  "author": "Solasido",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.3.1",
