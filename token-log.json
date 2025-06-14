@@ -14,5 +14,13 @@
     "decimals": 18,
     "address": "0x84128D1785698301bD419ceC8F098973edDFBC63",
     "timestamp": "2025-06-13T14:40:18.370Z"
+  },
+  {
+    "name": "SOLASIDO",
+    "ticker": "SLSD",
+    "supply": 500000000,
+    "decimals": 18,
+    "address": "0xe087540bd80a3C16449BE86C280B3e0CF321456d",
+    "timestamp": "2025-06-14T01:57:50.810Z"
   }
 ]

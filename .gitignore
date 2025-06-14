@@ -17,6 +17,7 @@ coverage/
 # Logs
 *.log
 gm-log.json
+token-log.json
 
 # VSCode settings
 .vscode/
