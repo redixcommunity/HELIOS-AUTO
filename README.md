@@ -97,7 +97,7 @@ Contoh output:
 ```
 
 ---
-## 📖 Baca GM Terakhir yang Dideploy
+## 🚀 Deploy Chronos (Schedule Execution)
 
 Jalankan:
 ```bash
