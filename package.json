@@ -6,7 +6,8 @@
   "scripts": {
     "deploy:gm": "npx hardhat run --network heliosTestnet scripts/dailyDeploy.js",
     "read:gm": "npx hardhat run --network heliosTestnet scripts/readLastGm.js",
-    "deploy:token": "npx hardhat run --network heliosTestnet scripts/deployToken.js"
+    "deploy:token": "npx hardhat run --network heliosTestnet scripts/deployToken.js",
+    "deploy:cron": "npx hardhat run --network heliosTestnet scripts/scheduleHeliosCron.js"
   },
   "keywords": [
     "helios",
