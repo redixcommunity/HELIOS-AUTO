@@ -22,7 +22,7 @@ async function deploy() {
 
   // Helios Chronos precompile
   const cronAddress = "0x0000000000000000000000000000000000000830"; 
-  const cronContract = new ethers.Contract(cronAddress, cronABI.abi, deployer);
+  const cronContract = new hre.ethers.Contract(cronAddress, cronABI.abi, deployer);
 
   const logs = JSON.parse(fs.readFileSync(logPath, "utf8"));
   const last = logs[logs.length - 1];
@@ -43,8 +43,8 @@ async function deploy() {
     60,          // frequency: setiap 60 block (sekitar 3 menit)
     0,           // no expiration
     400_000,     // gas limit
-    ethers.parseUnits("2", "gwei"), // maxGasPrice
-    ethers.parseEther("0.1")          // deposit 0.5 HLS
+    hre.ethers.parseUnits("2", "gwei"), // maxGasPrice
+    hre.ethers.parseEther("0.1") // deposit 0.5 HLS
   );
 
   await tx.wait();
