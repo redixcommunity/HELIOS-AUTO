@@ -103,7 +103,8 @@ Contoh output:
 ```
 .
 ├── contracts/
-│   └── GmContract.sol
+│   ├── Token.sol            # smart contract untuk deploy token
+│   └── GmContract.sol       # smart contract untuk deploy GM
 ├── scripts/
 │   ├── dailyDeploy.js       # Untuk deploy GM
 │   ├── deployToken.js       # Untuk deploy Token
