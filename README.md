@@ -48,6 +48,35 @@ Contoh output:
 ```
 
 ---
+## 🚀 Deploy Token
+
+Jalankan:
+
+```bash
+npm run deploy:token
+```
+
+Lalu masukkan detail token yang ingin dideploy
+
+Contoh:
+```bash
+✔ 📝 Nama token: SOLASIDO
+✔ 🔠 Ticker (symbol): SLSD
+✔ 📦 Jumlah total supply: 500000000
+✔ 🔢 Berapa decimals? 18
+```
+
+Contoh output jika berhasil:
+```bash
+🚀 Deploying token: SOLASIDO (SLSD)
+📦 Supply: 500000000
+🔢 Decimals: 18
+✅ Token deployed!
+📍 Address : 0xe0875...
+🔗 Explorer: https://explorer.helioschainlabs.org/address/0xe0875...
+```
+
+---
 
 ## 📖 Baca GM Terakhir yang Dideploy
 
@@ -77,6 +106,7 @@ Contoh output:
 │   └── GmContract.sol
 ├── scripts/
 │   ├── dailyDeploy.js       # Untuk deploy GM
+│   ├── deployToken.js       # Untuk deploy Token
 │   └── readLastGm.js        # Untuk baca GM terakhir
 ├── gm-log.json              # Log GM yang sudah dideploy
 ├── .env                     # Private key & RPC
