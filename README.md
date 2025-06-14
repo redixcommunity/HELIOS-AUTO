@@ -97,6 +97,18 @@ Contoh output:
 ```
 
 ---
+## 📖 Baca GM Terakhir yang Dideploy
+
+Jalankan:
+```bash
+npm run deploy:cron
+```
+
+Jika berhasil akan muncul 
+```bash
+Scheduled task created, transaction hash: 0x23412..
+```
+---
 
 ## 📂 Struktur Proyek
 
