@@ -44,7 +44,7 @@ async function deploy() {
     0,           // no expiration
     400_000,     // gas limit
     ethers.parseUnits("2", "gwei"), // maxGasPrice
-    ethers.parseEther("0.5")          // deposit 0.5 HLS
+    ethers.parseEther("0.1")          // deposit 0.5 HLS
   );
 
   await tx.wait();
