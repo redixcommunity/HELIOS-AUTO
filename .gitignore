@@ -25,3 +25,10 @@ token-log.json
 # System files
 .DS_Store
 Thumbs.db
+
+# Abaikan semua file Solidity
+contracts/**/*.sol
+
+# Kecualikan dua file spesifik agar tetap masuk Git
+!contracts/GmContract.sol
+!contracts/Token.sol
