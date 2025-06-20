@@ -38,9 +38,9 @@ async function deploy() {
   const tx = await cronContract.createCron(
     contractAddress,
     JSON.stringify(targetABI.abi),
-    "increment", // fungsi yang mau dipanggil
-    [],          // argumen jika ada
-    60,          // frequency: setiap 60 block (sekitar 3 menit)
+    "updateMessage", // fungsi di contract yang mau dipanggil
+    ["gm"],          // argumen jika ada
+    120,          // frequency: setiap 120 block (sekitar 5 menit)
     0,           // no expiration
     400_000,     // gas limit
     hre.ethers.parseUnits("2", "gwei"), // maxGasPrice

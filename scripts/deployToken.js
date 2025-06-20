@@ -41,12 +41,13 @@ async function main() {
   ]);
 
   const { name, ticker, supply, decimals } = answers;
+  
+  console.log(` `);
 
   // generate token contract
   const contractName = name.replace(/\s+/g, "").replace(/[^a-zA-Z0-9]/g, "");
   generateTokenContract(contractName, ticker, decimals);
-  
-  console.log(` `);
+ 
   console.log("🔧 Compiling solidity...");
   await execPromise("npx hardhat compile");
 
