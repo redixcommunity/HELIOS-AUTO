@@ -4,13 +4,13 @@ const path = require("path");
 const solasidoLogo = require("./logo.js");
 
 async function deployGmContract() {
-  console.log(solasidoLogo);
+  // console.log(solasidoLogo);
   
   const now = new Date();
   const gmMessage = `GM 🌞 ${now.toDateString()} - ${now.toLocaleTimeString()}`;
 
   const [deployer] = await hre.ethers.getSigners();
-  console.log(`Deploying gSAD 🌞 from ${deployer.address}`);
+  // console.log(`Deploying GM 🌞 at ${now} from ${deployer.address}`);
 
   const GmContract = await hre.ethers.getContractFactory("GmContract");
   const contract = await GmContract.deploy(gmMessage);
@@ -35,6 +35,7 @@ async function deployGmContract() {
   fs.writeFileSync(logPath, JSON.stringify(logs, null, 2));
 
   console.log("✅ GM Contract deployed!");
+  console.log("⏱️ Time:", now);
   console.log("📍 Address:", contractAddress);
   console.log("🔗 Explorer:", explorerURL);
 }
