@@ -1,7 +1,7 @@
 # HELIOS AUTO 🔁 - oleh Redix Community
 
 Alat otomatisasi untuk **deploy kontrak pintar di jaringan Helios EVM** menggunakan Hardhat.  
-Dikembangkan oleh komunitas terbuka: [Redix Community](https://github.com/redixcommunity)
+Dikembangkan oleh komunitas terbuka: [Redix Community](https://t.me/redixairdropp)
 
 ---
 
@@ -127,10 +127,10 @@ Komunitas pengembang independen yang berfokus pada:
 - Automasi blockchain
 - Proyek terbuka & kolaboratif
 
-> Kunjungi kami di: [https://github.com/redixcommunity](https://github.com/redixcommunity)
+> Kunjungi kami di: [https://github.com/redixcommunity](https://t.me/redixairdropp)
 
 ---
 
 ## ⚖️ Lisensi
 
-Proyek ini dilisensikan di bawah MIT License.
+Proyek ini dilisensikan oleh Redix Community
