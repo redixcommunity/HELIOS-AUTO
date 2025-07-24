@@ -3,7 +3,7 @@ const inquirer = require("inquirer").default;
 const fs = require("fs");
 const path = require("path");
 const hre = require("hardhat");
-const solasidoLogo = require("./logo.js");
+const redixLogo = require("./logo.js");
 const { exec } = require("child_process");
 const util = require("util");
 const execPromise = util.promisify(exec);
@@ -12,7 +12,7 @@ dotenv.config();
 
 async function main() {
 
-  console.log(solasidoLogo);
+  console.log(redixLogo);
   const answers = await inquirer.prompt([
     {
       type: "input",

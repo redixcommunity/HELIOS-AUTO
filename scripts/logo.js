@@ -1,15 +1,11 @@
-// logo.js (atau logo.cjs)
-// Pilih salah satu logo di bawah, misalnya Pilihan 2
+const redixLogo = `
+ RRRRRR   EEEEEEE  DDDDDD   IIIII  XXXXXXX
+ RR   RR  EE       DD   DD   III   XX   XX
+ RR   RR  EE       DD   DD   III    XX XX 
+ RRRRRR   EEEEE    DD   DD   III     XXX  
+ RR  RR   EE       DD   DD   III    XX XX 
+ RR   RR  EE       DD   DD   III   XX   XX
+ RR    RR EEEEEEE  DDDDDD   IIIII  XXXXXXX
+ `;
 
-const solasidoLogo = `
- SSSSSS    OOOOOO   LL        AAAAA    SSSSSS   IIIIII  DDDDDD    OOOOOO
-SS    SS  OO    OO  LL       AA   AA  SS    SS    II    DD   DD  OO    OO
-SS        OO    OO  LL       AAAAAAA  SS          II    DD   DD  OO    OO
- SSSSSS   OO    OO  LL       AA   AA   SSSSSS     II    DD   DD  OO    OO
-      SS  OO    OO  LL       AA   AA        SS    II    DD   DD  OO    OO
-SS    SS  OO    OO  LL       AA   AA  SS    SS    II    DD   DD  OO    OO
- SSSSSS    OOOOOO   LLLLLLL  AA   AA   SSSSSS   IIIIII  DDDDDD    OOOOOO
-`;
-
-// Export logo menggunakan module.exports
-module.exports = solasidoLogo;
+ module.exports = redixLogo;

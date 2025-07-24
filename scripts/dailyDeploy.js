@@ -1,10 +1,10 @@
 const hre = require("hardhat");
 const fs = require("fs");
 const path = require("path");
-const solasidoLogo = require("./logo.js");
+const redixLogo = require("./logo.js");
 
 async function deployGmContract() {
-  // console.log(solasidoLogo);
+  // console.log(redixLogo);
   
   const now = new Date();
   const gmMessage = `GM 🌞 ${now.toDateString()} - ${now.toLocaleTimeString()}`;

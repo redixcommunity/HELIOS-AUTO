@@ -3,7 +3,7 @@ const inquirer = require("inquirer").default;
 const fs = require("fs");
 const path = require("path");
 const hre = require("hardhat");
-const solasidoLogo = require("./logo.js");
+const redixLogo = require("./logo.js");
 const cronABI = require("../abi/chronos.json"); 
 const targetABI = require("../artifacts/contracts/GmContract.sol/GmContract.json");
 const logPath = path.join(__dirname, "../gm-log.json");
@@ -16,9 +16,10 @@ async function deploy() {
     return;
   }
 
-  console.log(solasidoLogo);
+  console.log(redixLogo);
 
   const [deployer] = await hre.ethers.getSigners();
+  console.log("Deployer address:", deployer.address);
 
   // Helios Chronos precompile
   const cronAddress = "0x0000000000000000000000000000000000000830"; 
