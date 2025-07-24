@@ -10,6 +10,10 @@ Dikembangkan oleh komunitas terbuka: [Redix Community](https://t.me/redixairdrop
 1. **Install dependensi:**
 
 ```bash
+git clone https://github.com/redixcommunity/HELIOS-AUTO.git
+cd HELIOS-AUTO
+```
+```bash
 npm install
 ```
 
