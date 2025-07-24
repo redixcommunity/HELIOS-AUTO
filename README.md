@@ -1,54 +1,45 @@
-# helios-daily-gm 🌓
+# HELIOS AUTO 🔁 - oleh Redix Community
 
-Skrip Node.js untuk **deploy smart contract berisi pesan "GM" harian** ke jaringan Helios EVM.  
+Alat otomatisasi untuk **deploy kontrak pintar di jaringan Helios EVM** menggunakan Hardhat.  
+Dikembangkan oleh komunitas terbuka: [Redix Community](https://github.com/redixcommunity)
 
 ---
 
-## 🔧 Setup Awal
+## 🛠️ Persiapan Awal
 
-1. **Clone repositori & install dependensi:**
+1. **Install dependensi:**
 
 ```bash
 npm install
 ```
 
-2. **Atur `.env` file:**
-
-Buat file `.env` di root:
+2. **Buat file `.env` di root proyek:**
 
 ```
-PRIVATE_KEY=your_wallet_private_key
+PRIVATE_KEY=masukkan_private_key_wallet_anda
 RPC_URL=https://testnet1.helioschainlabs.org
 ```
 
-
-3. **Pastikan kamu sudah memiliki saldo HLS di wallet tersebut.**
+3. **Pastikan wallet Anda memiliki saldo HLS.**
 
 ---
 
-## 🚀 Deploy Pesan GM
+## 🚀 Deploy Pesan GM Otomatis
 
-Jalankan:
+Jalankan perintah:
 
 ```bash
 npm run deploy:gm
 ```
 
-Ini akan:
-- Deploy kontrak baru berisi pesan `"gm 🌞 <tanggal> - <jam>"`.
-- Simpan address & timestamp ke `gm-log.json`.
-- Tampilkan link explorer Helios.
-
-Contoh output:
-
-```
-✅ GM Contract deployed!
-📍 Address: 0xabc123...
-🔗 Explorer: https://explorer.helioschainlabs.org/address/0xabc123...
-```
+Fungsinya:
+- Deploy kontrak dengan pesan `"gm 🌞 <tanggal> - <jam>"`.
+- Menyimpan address kontrak ke `gm-log.json`.
+- Menampilkan link menuju Helios Explorer.
 
 ---
-## 🚀 Deploy Token
+
+## 🚀 Deploy Token Kustom
 
 Jalankan:
 
@@ -56,77 +47,90 @@ Jalankan:
 npm run deploy:token
 ```
 
-Lalu masukkan detail token yang ingin dideploy
+Masukkan informasi token seperti:
 
-Contoh:
 ```bash
-✔ 📝 Nama token: SOLASIDO
-✔ 🔠 Ticker (symbol): SLSD
-✔ 📦 Jumlah total supply: 500000000
-✔ 🔢 Berapa decimals? 18
+✔ Nama token: ZORABAG
+✔ Symbol     : ZRB
+✔ Total supply: 100000000
+✔ Decimals   : 18
 ```
 
-Contoh output jika berhasil:
+Hasil jika sukses:
+
 ```bash
-🚀 Deploying token: SOLASIDO (SLSD)
-📦 Supply: 500000000
-🔢 Decimals: 18
-✅ Token deployed!
-📍 Address : 0xe0875...
-🔗 Explorer: https://explorer.helioschainlabs.org/address/0xe0875...
+✅ Token berhasil dideploy!
+📍 Address : 0xabc...
+🔗 Explorer: https://explorer.helioschainlabs.org/address/0xabc...
 ```
 
 ---
 
-## 📖 Baca GM Terakhir yang Dideploy
-
-Jalankan:
+## 📖 Lihat GM Terakhir
 
 ```bash
 npm run read:gm
 ```
 
-Contoh output:
+Output:
 
 ```
-📍 GM dari kontrak terakhir:
-🆔 Address  : 0xabc123...
-🕒 Waktu    : 6/12/2025, 07:00:00
-💬 Pesan GM : gm 🌞 Thu Jun 12 2025 - 07:00:00
-🔗 Explorer : https://explorer.helioschainlabs.org/address/0xabc123...
+📍 GM terakhir:
+🆔 Address  : 0xabc...
+🕒 Tanggal  : 24 Juli 2025
+💬 Pesan GM : gm 🌞 Thu Jul 24 2025 - 07:00:00
+🔗 Explorer : https://explorer.helioschainlabs.org/address/0xabc...
 ```
 
 ---
-## 🚀 Deploy Chronos (Schedule Execution)
+
+## ⏰ Deploy Cron (Penjadwalan)
 
 Jalankan:
+
 ```bash
 npm run deploy:cron
 ```
 
-Jika berhasil akan muncul 
-```bash
-Scheduled task created, transaction hash: 0x23412..
+Jika sukses:
+
 ```
+⏱️ Jadwal berhasil dibuat, tx hash: 0x123abc...
+```
+
 ---
 
-## 📂 Struktur Proyek
+## 📂 Struktur Folder
 
 ```
 .
 ├── contracts/
-│   ├── Token.sol            # smart contract untuk deploy token
-│   └── GmContract.sol       # smart contract untuk deploy GM
+│   ├── Token.sol
+│   └── GmContract.sol
 ├── scripts/
-│   ├── dailyDeploy.js       # Untuk deploy GM
-│   ├── deployToken.js       # Untuk deploy Token
-│   └── readLastGm.js        # Untuk baca GM terakhir
-├── gm-log.json              # Log GM yang sudah dideploy
-├── .env                     # Private key & RPC
-├── .gitignore
-├── hardhat.config.js
-└── package.json
+│   ├── dailyDeploy.js
+│   ├── deployToken.js
+│   └── readLastGm.js
+├── gm-log.json
+├── .env
+├── hardhat.config.cjs
+├── package.json
+└── README.md
 ```
 
 ---
 
+## 🤝 Tentang Redix Community
+
+Komunitas pengembang independen yang berfokus pada:
+- Infrastruktur Web3
+- Automasi blockchain
+- Proyek terbuka & kolaboratif
+
+> Kunjungi kami di: [https://github.com/redixcommunity](https://github.com/redixcommunity)
+
+---
+
+## ⚖️ Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.
